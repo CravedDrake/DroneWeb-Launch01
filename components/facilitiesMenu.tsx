@@ -25,82 +25,32 @@ export default function FacilitiesMenu() {
       <button
         aria-label="menu"
         onClick={() => setOpen((s) => !s)}
-        className="p-2 rounded-md hover:bg-gray-100 transition"
+        className="p-2 rounded-md hover:bg-teal-100 transition"
       >
         <div className="space-y-1">
-          <span className="block w-6 h-0.5 bg-gray-800" />
-          <span className="block w-6 h-0.5 bg-gray-800" />
-          <span className="block w-6 h-0.5 bg-gray-800" />
+          <span className="block w-6 h-0.5 bg-teal-600" />
+          <span className="block w-6 h-0.5 bg-teal-600" />
+          <span className="block w-6 h-0.5 bg-teal-600" />
         </div>
       </button>
 
       {/* Mega menu */}
       {open && (
-        <div className="absolute right-0 mt-3 w-40 md:w-75 bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4 md:p-6 max-h-[80vh] overflow-y-auto">
+        <div className="absolute right-0 mt-3 w-20 md:w-55 bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4 md:p-6 max-h-[80vh] overflow-y-auto">
           {/* Centering content and text-right */}
           <div className="flex justify-end">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-2 md:gap-6 text-right">
-              {/* Column 1 */}
-              <div>
-                <h3 className="text-base md:text-lg font-semibold mb-2">Buy a Drone</h3>
-                <ul>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#quadcopter">Quadcopters</Link>
-                  </li>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#fixedwing">Fixed Wing</Link>
-                  </li>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#racing">Racing Drones</Link>
-                  </li>
-                </ul>
-              </div>
-
+            <div className="">
               {/* Column 2 */}
               <div>
-                <h3 className="text-base md:text-lg font-semibold mb-2">Rent a Drone</h3>
-                <ul>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#daily">Daily Rent</Link>
-                  </li>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#weekly">Weekly Rent</Link>
-                  </li>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#monthly">Monthly Rent</Link>
-                  </li>
-                </ul>
+              <Link href={'/products'} className="text-base md:text-lg font-semibold mb-2">Buy & Rent a Drone</Link>
               </div>
               {/* Column 3 */}
               <div>
-                <h3 className="text-base md:text-lg font-semibold mb-2">Accessories</h3>
-                <ul>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#batteries">Batteries</Link>
-                  </li>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#propellers">Propellers</Link>
-                  </li>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#cases">Cases & Bags</Link>
-                  </li>
-                </ul>
+              <Link href={'/products'} className="text-base md:text-lg font-semibold mb-2">Accesories</Link>
               </div>
-
               {/* Column 4 */}
               <div>
-                <h3 className="text-base md:text-lg font-semibold mb-2">Learn</h3>
-                <ul>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#tutorials">Tutorials</Link>
-                  </li>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#guides">Guides</Link>
-                  </li>
-                  <li className="py-1 hover:text-blue-600">
-                    <Link href="#courses">Courses</Link>
-                  </li>
-                </ul>
+              <Link href={'/products'} className="text-base md:text-lg font-semibold mb-2">Learn To Fly</Link>
               </div>
             </div>
           </div>
