@@ -12,8 +12,6 @@ description: "Find high quality drone accessories in Nepal. Batteries, Propeller
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <div className="min-h-screen bg-gray-100 text-gray-900">
-         
-    
           <main className="p-4 max-w-7xl mx-auto">
             {children}
           </main>

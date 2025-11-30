@@ -17,8 +17,7 @@ export default function LearnToFlyPage() {
           Take your drone skills to the next level with our expert-led training
           programs across Nepal.
         </p>
-
-       
+        
         <button
         onClick={() => {
           window.open(
@@ -31,8 +30,6 @@ export default function LearnToFlyPage() {
         Learn to Fly Now
         <ArrowRightIcon className="ml-3 w-6 h-6" />
       </button>
-            
-          
       </section>
 
       {/* Details */}
@@ -102,8 +99,6 @@ export default function LearnToFlyPage() {
         Learn to Fly Now
         <ArrowRightIcon className="ml-3 w-6 h-6" />
       </button>
-            
-          
         </div>
       </section>
     </main>

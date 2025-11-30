@@ -22,7 +22,6 @@ export default function Page() {
   DJI Mini 3
 </h1>
 
-
       {/* Media Section */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-x-7">
   {/* Left thumbnails */}
@@ -63,7 +62,6 @@ export default function Page() {
     </div>
   ))}
 </div>
-
 
   {/* Selected Viewer */}
   <div className="mt-5 mb-5 md:col-span-6 border-2 border-stone-700 rounded-xl overflow-hidden aspect-video">

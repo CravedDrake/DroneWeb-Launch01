@@ -23,11 +23,11 @@ link: '/products/details/dji-mini-4-pro',wMessage: encodeURIComponent('Hello, I 
 { id: 8, name: "GPS Module", description: " GPS Module | High Accuracy | Fast Satellite Lock | Stable Position Hold | Enhanced Navigation", image: "/gps.jpg" ,
  link: '/products/details/dji-mini-4-pro', wMessage: encodeURIComponent('Hello, I want to buy a GPS Module'),},
  { id: 9, name: "Motherboard", description: " Motherboard | High-Performance Processing | Stable Connectivity | Efficient Circuits | Reliable Control System", image: "/mother_board.jpg" ,
-    link: '/products/details/dji-mini-4-pro', wMessage: encodeURIComponent('Hello, I want to buy a Motherboard'),},
+  link: '/products/details/dji-mini-4-pro', wMessage: encodeURIComponent('Hello, I want to buy a Motherboard'),},
 { id: 10, name: "Upper Body", description: " Upper Body Frame | Lightweight Shell | Aerodynamic | High Durability | Premium Build Quality", image: "/upper_body.jpg" ,
-        link: '/products/details/dji-mini-4-pro', wMessage: encodeURIComponent('Hello, I want to buy a Upper Body'),},
+  link: '/products/details/dji-mini-4-pro', wMessage: encodeURIComponent('Hello, I want to buy a Upper Body'),},
 { id: 11, name: "Lower body", description: " Lower Body Frame | Strong Structure | Heat-Resistant | Perfect Alignment | Crash-Resistant", image: "/lower_body.jpg" ,
-            link: '/products/details/dji-mini-4-pro', wMessage: encodeURIComponent('Hello, I want to buy a Lower Body'),},
+  link: '/products/details/dji-mini-4-pro', wMessage: encodeURIComponent('Hello, I want to buy a Lower Body'),},
 ];
 
 
@@ -37,17 +37,14 @@ const [page, setPage] = useState(1);
 const ITEMS_PER_PAGE = 4;
 const router = useRouter();
 
-
 const filteredProducts = useMemo(() => {
 return products.filter((p) =>
 p.name.toLowerCase().includes(search.toLowerCase())
 );
 }, [search]);
 
-
 const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
 const phoneNumber = '9779705275917'; // include country code, e.g., 977 for Nepal
-
 
 const paginatedProducts = useMemo(() => {
 const start = (page - 1) * ITEMS_PER_PAGE;
@@ -89,8 +86,6 @@ return (
   </div>
 </div>
 
-    
-    
     {/* Products List */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
   {paginatedProducts.map((product) => (
@@ -153,12 +148,9 @@ return (
   </svg>
 </button>
 
-
-
 <span className="px-4 py-2 font-semibold">
 Page {page} of {totalPages}
 </span>
-
 
 <button
   disabled={page === totalPages}

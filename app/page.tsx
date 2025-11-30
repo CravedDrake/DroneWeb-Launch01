@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-
 const banners = [
 {
 id: 1,
@@ -17,7 +16,6 @@ image: '/mavi_air.jpg', button:'Shop Now', link:'/products'
 { id: 3, title: 'Accessories', description: 'Zoom-capable aerial imaging.', image: '/accessories.jpeg' , button:'Shop Now', link:'/accessories'},
 { id: 4, title: 'Learn to FLy', description: 'Everything you need to start flying.', image: '/learn-to-fly.jpeg' , button:'Learn Now', link:'/learn-to-fly'},
 ];
-
 
 const products = [
 { id: 1, name: 'DJI Mini 4 Pro',  image: '/dji_mini_4_01.jpeg', description:'4K/60FPS video, 48MP photos, 34-min flight, 249g, obstacle sensing, and intelligent flight modes.', featured: true   ,link: "/products/details/dji-mini-4-pro"},
@@ -34,10 +32,8 @@ export default function HomePage() {
   <div className="max-w-6xl mx-auto px-4 py-2 bg-gray-300/50">
   <HeroCarousel banners={banners} />
   
-  
   <section className="mt-12">
   <h2 className="text-2xl font-semibold mb-6 text-gray-800 ">Featured Products</h2>
-  
   
   {/* First show the two large featured products side-by-side on md+ */}
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -59,7 +55,6 @@ export default function HomePage() {
   </div>
   ))}
   </div>
-  
   
   {/* Then show the rest as single cards in a responsive grid */}
   <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -105,8 +100,6 @@ export default function HomePage() {
   md:min-h-0 md:h-[300px]   /* smaller height on md */ 
   lg:h-[280px]        /* even smaller on large screens */
   rounded-xl overflow-hidden shadow-lg mx-auto group bg-gray-100">
-
-
 
   {banners.map((b, i) => (
     <div
@@ -175,8 +168,6 @@ export default function HomePage() {
     ))}
   </div>
 </div>
-
-
     );
   }
   

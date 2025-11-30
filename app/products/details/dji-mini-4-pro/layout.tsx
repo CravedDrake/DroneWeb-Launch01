@@ -1,7 +1,6 @@
 import React from "react";
 import "../../../globals.css";
 
-
 export const metadata = {
   title: "DJI Mini 4 Pro Nepal | Best Price & Fast Delivery",
   description:
@@ -10,7 +9,6 @@ export const metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    
     <main className="max-w-7xl mx-auto p-4">
       {children}
       </main>

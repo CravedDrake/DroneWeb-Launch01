@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Page() {
   const images = [
@@ -21,7 +21,6 @@ export default function Page() {
     <h1 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-wide text-center">
 DJI Mini 4 Pro
 </h1>
-
 
     {/* Media Section */}
     <div className="grid grid-cols-1 md:grid-cols-12 gap-x-7">
@@ -64,7 +63,6 @@ DJI Mini 4 Pro
   ))}
 </div>
 
-
 {/* Selected Viewer */}
 <div className="mt-5 mb-5 md:col-span-6 border-2 border-slate-700 rounded-xl overflow-hidden aspect-video">
   {selectedMedia.endsWith(".mp4") ? (
@@ -81,10 +79,8 @@ DJI Mini 4 Pro
   )}
 </div>
 
-
-
       {/* Short Description */}
-      <div className="md:col-span-3 space-y-4">
+<div className="md:col-span-3 space-y-4">
 <p className="font-semibold">
   DJI Mini 4 Pro – 4K UHD Camera | 60FPS | 48MP Photos | 34-min Flight Time | 
   249g Ultra-Light | 3-Axis Gimbal | GPS & Obstacle Sensing | HDR Video |
@@ -102,19 +98,17 @@ className="flex-1 sm:flex-auto bg-blue-600 hover:bg-blue-700 hover:scale-95 text
 Buy Now
 </button>
 
-
-  <button 
+<button 
   onClick={() => {
     window.open(`https://wa.me/${phoneNumber}?text=${rentMessage}`, '_blank');
   }}
   className="flex-1 sm:flex-auto bg-teal-600 hover:bg-teal-700 hover:scale-95 text-white p-3 rounded-lg shadow transition-all duration-200"
-  >
+>
     Rent Now
-  </button>
-</div>
-</div>
-
-    </div>
+</button>
+ </div>
+ </div>
+  </div>
 
     {/* Tabs */}
     <div className="flex space-x-4 border-b pb-2 font-semibold">
@@ -151,8 +145,7 @@ Buy Now
 <li>Dual native ISO for improved low-light quality</li>
 <li>True Vertical Shooting for social media content</li>                           
 </ul>
-
-  </div>
+</div>
 
   {/* Row */}
   <div className="py-3 grid grid-cols-1 md:grid-cols-3 items-center">
@@ -208,7 +201,6 @@ Buy Now
   </div>
 </div>
 )}
-
 
     {/* Description */}
     {activeTab === "desc" && (

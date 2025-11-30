@@ -1,18 +1,15 @@
 "use client";
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from "next/navigation";
 import {  useEffect } from "react";
 
-
 const products = [
 { id: 1, name: "DJI Mini 4 Pro – 4K UHD Camera | 60FPS | 48MP Photos | 34-min Flight Time | 249g Ultra-Light", image: "/dji_mini_4_03.jpeg" , link: '/products/details/dji-mini-4-pro'},
 { id: 2, name: "DJI Mini 3 – 4K UHD Camera | 30FPS | 12MP Photos | 34-min Flight Time | 249g Ultra-Light |", image: "/dji_mini_3_01.jpg", link: '/products/details/dji-mini-3' },
-{ id: 3, name: "Accessories – Camera | arms | batery | charging hub | gimble | gps | propeller | propeller guard", image: "/accessories.jpeg" , link: '/accessories'},
-
+{ id: 3, name: "Accessories – Camera | arms | batery | charging hub | gimble | gps | propeller | propeller guard", image: "/accessories.jpeg" , link: '/accessories'}
 ];
-
 
 export default function ProductsPage() {
 const ITEMS_PER_PAGE = 4;
@@ -43,7 +40,6 @@ return (
     {/* Search Bar */}
     <div className="p-6 max-w-6xl mx-auto">
       
-
       {/* Search Bar */}
       <div className="mb-6 w-full flex justify-center">
         <div className="relative w-full max-w-md">
@@ -80,10 +76,6 @@ return (
       {/* Accessories list can go here */}
     </div>
   
-
-
-    
-    
     {/* Products List */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
     {paginatedProducts.map((product) => (
@@ -100,10 +92,7 @@ return (
     />
     </div>
     
-    
     <h2 className="text-sm ">{product.name}</h2>
-    
-    
     
     <button
       onClick={() => router.push(product.link)}
@@ -137,12 +126,9 @@ return (
   </svg>
 </button>
 
-
-
 <span className="px-4 py-2 font-semibold">
 Page {page} of {totalPages}
 </span>
-
 
 <button
   disabled={page === totalPages}
@@ -165,7 +151,6 @@ Page {page} of {totalPages}
     />
   </svg>
 </button>
-
 </div>
 </div>
 );

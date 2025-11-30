@@ -70,9 +70,15 @@ export default function AboutPage() {
 
             <div className="flex flex-col sm:flex-row items-center gap-4 text-gray-700">
               <PhoneIcon className="w-5 h-5 text-teal-600" />
-              <span>+977 9808703134</span>
-              <span>+977 9869153337</span>
-              <span>+977 9705275917</span>
+              <span>
+                <a href="https://wa.me/9779808703134" target="_blank" className="text-teal-600">+977 9808703134</a>
+              </span>
+              <span>
+                <a href="https://wa.me/9779869153337" target="_blank" className="text-teal-600">+977 9869153337</a>
+              </span>
+              <span>
+                <a href="https://wa.me/9779705275917" target="_blank" className="text-teal-600">+977 9705275917</a>
+              </span>
             </div>
           </div>
 

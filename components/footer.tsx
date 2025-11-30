@@ -29,7 +29,6 @@ export default function Footer() {
         <h4 className="text-gray-900 font-semibold mb-3">Quick Links</h4>
         <ul className="space-y-2 text-xs text-gray-600">
           <li><a href="/products" className="hover:text-black">Products</a></li>
-          <li><a href="/blog" className="hover:text-black">Blog</a></li>
           <li><a href="/about-us" className="hover:text-black">About</a></li>
         </ul>
       </div>
@@ -57,7 +56,6 @@ export default function Footer() {
             +977 9869153337
           </a>
         </li>
-
         <li>Address: Kathmandu, Nepal</li>
       </ul>
     </div>
@@ -73,22 +71,13 @@ export default function Footer() {
           <i className="ri-instagram-line"></i>
           <span>Instagram</span>
         </a>
-
         <a href="https://vm.tiktok.com/ZSHTa4eKFEhH4-Kruoe/" target="_blank" className="flex items-center gap-2 hover:text-black">
           <i className="ri-youtube-fill"></i>
           <span>Tik Tok</span>
         </a>
       </div>
     </div>
-
   </div>
-
-  {/* Bottom
-  <div className="border-t border-gray-100">
-    <div className="max-w-6xl mx-auto px-6 py-4 text-sm text-gray-500 text-center">
-      © {new Date().getFullYear()} Drone Zone. All rights reserved.
-    </div>
-  </div> */}
 </footer>
 );
 }  
