@@ -4,8 +4,8 @@ import React from "react";
 
 
 export const metadata = {
-title: "Drone Accessories Nepal | Premium Parts & Gear",
-description: "Find high quality drone accessories in Nepal. Batteries, Propellers, Gimbal, Arms, GPS Modules and more. Premium parts for dji FPV and professional drones.",
+title: "Drone Training Nepal | Learn FPV & Normal Flying",
+description: "Join Nepal’s top drone training program. Learn to fly FPV and normal drones with hands-on sessions, expert guidance, and real-world practice for all skill levels.",
 };
 
 

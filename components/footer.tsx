@@ -30,7 +30,7 @@ export default function Footer() {
         <ul className="space-y-2 text-xs text-gray-600">
           <li><a href="/products" className="hover:text-black">Products</a></li>
           <li><a href="/blog" className="hover:text-black">Blog</a></li>
-          <li><a href="/about" className="hover:text-black">About</a></li>
+          <li><a href="/about-us" className="hover:text-black">About</a></li>
         </ul>
       </div>
 
@@ -65,19 +65,18 @@ export default function Footer() {
 <div >
       <h4 className="text-gray-900 font-semibold mb-3">Follow Us</h4>
       <div className="flex flex-col gap-1 text-xs text-gray-600">
-        <a href="https://www.facebook.com/" target="_blank" className="flex items-center gap-2 hover:text-black">
-          <i className="ri-facebook-fill"></i>
+      <a href="https://www.facebook.com/" target="_blank" className="flex items-center gap-2 hover:text-black">
+          <i className="ri-youtube-fill"></i>
           <span>Facebook</span>
         </a>
-
-        <a href="https://www.instagram.com/" target="_blank" className="flex items-center gap-2 hover:text-black">
+        <a href="https://www.instagram.com/dronezone_np?utm_source=qr&igsh=MTJjNGZrY3B0ZmY0bQ==" target="_blank" className="flex items-center gap-2 hover:text-black">
           <i className="ri-instagram-line"></i>
           <span>Instagram</span>
         </a>
 
-        <a href="https://www.youtube.com/" target="_blank" className="flex items-center gap-2 hover:text-black">
+        <a href="https://vm.tiktok.com/ZSHTa4eKFEhH4-Kruoe/" target="_blank" className="flex items-center gap-2 hover:text-black">
           <i className="ri-youtube-fill"></i>
-          <span>YouTube</span>
+          <span>Tik Tok</span>
         </a>
       </div>
     </div>

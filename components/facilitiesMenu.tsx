@@ -36,21 +36,21 @@ export default function FacilitiesMenu() {
 
       {/* Mega menu */}
       {open && (
-        <div className="absolute right-0 mt-3 w-20 md:w-55 bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4 md:p-6 max-h-[80vh] overflow-y-auto">
+        <div className="absolute right-0 mt-3 w-50 md:w-60 bg-white border border-gray-200 rounded-lg shadow-lg z-50 p-4 md:p-6 max-h-[80vh] overflow-y-auto">
           {/* Centering content and text-right */}
           <div className="flex justify-end">
             <div className="">
               {/* Column 2 */}
               <div>
-              <Link href={'/products'} className="text-base md:text-lg font-semibold mb-2">Buy & Rent a Drone</Link>
+              <Link href={'/products'} className="text-base md:text-lg font-semibold mb-2 hover:underline">Buy & Rent a Drone</Link>
               </div>
               {/* Column 3 */}
               <div>
-              <Link href={'/products'} className="text-base md:text-lg font-semibold mb-2">Accesories</Link>
+              <Link href={'/accessories'} className="text-base md:text-lg font-semibold mb-2 hover:underline">Accesories</Link>
               </div>
               {/* Column 4 */}
               <div>
-              <Link href={'/products'} className="text-base md:text-lg font-semibold mb-2">Learn To Fly</Link>
+              <Link href={'/learn-to-fly'} className="text-base md:text-lg font-semibold mb-2 hover:underline">Learn To Fly</Link>
               </div>
             </div>
           </div>

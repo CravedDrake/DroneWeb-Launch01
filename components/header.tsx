@@ -4,7 +4,7 @@ import FacilitiesMenu from './facilitiesMenu';
 
 export default function Header() {
     return (
-        <header className="w-full bg-gray-300/50 text-gray-700 shadow-md">
+        <header className="w-ful bg-white text-gray-700 shadow-md">
           <div className="max-w-6xl mx-auto px-6 py-4 flex items-center">
             {/* left: logo */}
             <div className="flex items-center flex-1 md:flex-none">
@@ -16,16 +16,12 @@ export default function Header() {
             />
           </Link>
         </div>
-        
-        
-        
             {/* center: nav (centered on larger screens) */}
             <nav className="flex flex-1 justify-center gap-3 md:gap-12 text-xs md:text-base">
           {[
             { href: '/', label: 'Home' },
             { href: '/products', label: 'Products' },
-            { href: '/blog', label: 'Blog' },
-            { href: '/about', label: 'About' },
+            { href: '/about-us', label: 'About' },
           ].map((item) => (
             <Link
               key={item.href}
@@ -36,14 +32,11 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        
-        
             {/* right: hamburger / dropdown */}
             <div className="flex items-center justify-end flex-1 md:flex-none">
               <FacilitiesMenu />
             </div>
           </div>
         </header>
-        
         );
 }

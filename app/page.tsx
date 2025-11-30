@@ -1,6 +1,6 @@
 'use client';
 
-
+import Link from "next/link";
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -11,32 +11,32 @@ id: 1,
 title: 'Buy a Drone',
 description: 'High-end flight performance and functionality for limitless exploration.',
 // using the uploaded design image as a banner sample. In a real site replace with optimized assets.
-image: '/mavi_air.jpg',
+image: '/mavi_air.jpg', button:'Shop Now', link:'/products'
 },
-{ id: 2, title: 'Rent a Drone', description: 'Reliable. Precise. Ready.', image: '/phantom 3 se.jpg' },
-{ id: 3, title: 'Accessories', description: 'Zoom-capable aerial imaging.', image: '/accessories.jpeg' },
-{ id: 4, title: 'Learn to FLy', description: 'Everything you need to start flying.', image: '/Learn.jpeg' },
+{ id: 2, title: 'Rent a Drone', description: 'Reliable. Precise. Ready.', image: '/phantom 3 se.jpg',  button:'Shop Now', link:'/products'},
+{ id: 3, title: 'Accessories', description: 'Zoom-capable aerial imaging.', image: '/accessories.jpeg' , button:'Shop Now', link:'/accessories'},
+{ id: 4, title: 'Learn to FLy', description: 'Everything you need to start flying.', image: '/learn-to-fly.jpeg' , button:'Learn Now', link:'/learn-to-fly'},
 ];
 
 
 const products = [
-{ id: 1, name: 'DJI Mini 4 Pro',  image: '/dji_mini_4_01.jpeg', description:'4K/60FPS video, 48MP photos, 34-min flight, 249g, obstacle sensing, and intelligent flight modes.', featured: true },
-{ id: 2, name: 'DJI Mini 3', image: '/dji_mini_3_01.jpg', description:'4K video, 12MP photos, 34-min flight, 249g, compact and easy to fly.', featured: true },
-{ id: 3, name: 'Camera',  image: '/Camera.jpg'},
-{ id: 4, name: 'Battery', image: '/Battery.jpg'},
-{ id: 5, name: 'Propeller Guard', image: '/Propeller Guard.jpg'},
+{ id: 1, name: 'DJI Mini 4 Pro',  image: '/dji_mini_4_01.jpeg', description:'4K/60FPS video, 48MP photos, 34-min flight, 249g, obstacle sensing, and intelligent flight modes.', featured: true   ,link: "/products/details/dji-mini-4-pro"},
+{ id: 2, name: 'DJI Mini 3', image: '/dji_mini_3_01.jpg', description:'4K video, 12MP photos, 34-min flight, 249g, compact and easy to fly.', featured: true   ,link: "/products/details/dji-mini-3"},
+{ id: 3, name: 'Camera',  image: '/camera.jpg'  ,link: "/accessories"},
+{ id: 4, name: 'Battery', image: '/battery.jpg'  ,link: "/accessories"},
+{ id: 5, name: 'Propeller Guard', image: '/propeller_guard.jpg'  ,link: "/accessories"},
 ];
 
 export default function HomePage() {
   const router = useRouter();
 
   return (
-  <div className="max-w-6xl mx-auto px-4 py-2">
+  <div className="max-w-6xl mx-auto px-4 py-2 bg-gray-300/50">
   <HeroCarousel banners={banners} />
   
   
   <section className="mt-12">
-  <h2 className="text-2xl font-semibold mb-6">Featured Products</h2>
+  <h2 className="text-2xl font-semibold mb-6 text-gray-800 ">Featured Products</h2>
   
   
   {/* First show the two large featured products side-by-side on md+ */}
@@ -47,12 +47,12 @@ export default function HomePage() {
   <img src={p.image} alt={p.name} className="object-cover w-full h-full" />
   </div>
   <div className="p-6 flex-1 flex flex-col justify-center">
-  <h3 className="text-xl font-bold mb-2">{p.name}</h3>
+  <h3 className="text-xl font-bold mb-2 text-gray-800">{p.name}</h3>
   <p className="text-gray-600 mb-4">{p.description}</p>
   <div className="flex items-center justify-between">
   {/* <div className="text-2xl font-semibold">{p.price}</div> */}
   <button 
-  onClick={() => router.push('/products/details/dji-mini-4-pro')}
+  onClick={() => router.push(p.link)}
   className="px-4 py-2 bg-teal-600 text-white rounded-md">Learn More</button>
   </div>
   </div>
@@ -73,9 +73,11 @@ export default function HomePage() {
         />
       </div>
       <div className="p-4">
-        <h4 className="font-semibold mb-1">{p.name}</h4>
+        <h4 className="font-semibold mb-1 text-gray-800">{p.name}</h4>
         {/* <p className="text-sm text-gray-600 mb-3">{p.price}</p> */}
-        <button className="px-3 py-2 border rounded-xl text-sm text-white bg-teal-600">
+        <button 
+        onClick={() => router.push(p.link)}
+        className="px-3 py-2 border rounded-xl text-sm text-white bg-teal-600">
           View
         </button>
       </div>
@@ -87,7 +89,7 @@ export default function HomePage() {
   );
   }
 
-  function HeroCarousel({ banners }: { banners: { id: number; image: string; title: string; description: string }[] }) {
+  function HeroCarousel({ banners }: { banners: { id: number; image: string; title: string; description: string; button: string; link: string}[] }) {
     const [index, setIndex] = useState(0);
   
     useEffect(() => {
@@ -124,9 +126,12 @@ export default function HomePage() {
           {b.description}
         </p>
 
-        <button className="mt-4 px-3 py-2 sm:px-4 sm:py-2 bg-teal-600 text-white text-xs sm:text-sm font-semibold rounded-lg hover:bg-teal-800 transition">
-          Shop Now
-        </button>
+<Link href={b.link}>
+  <button className="mt-4 px-3 py-2 sm:px-4 sm:py-2 bg-teal-600 text-white text-xs sm:text-sm font-semibold rounded-lg hover:bg-teal-800 transition">
+    {b.button}
+  </button>
+</Link>
+
       </div>
 
       {/* RIGHT — IMAGE (NO CROPPING) */}

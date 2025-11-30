@@ -3,11 +3,11 @@ import "../../../globals.css";
 
 
 export const metadata = {
-  title: "Buy DJI Mini 3 | Best Price in Nepal",
+  title: "DJI Mini 3 Nepal | Best Deals & Fast Delivery",
   description:
-  `Buy the DJI Mini 3 drone in Nepal — lightweight, portable, and powerful.
-   Shop now for the best price, fast shipping across Kathmandu and beyond, and
-    enjoy high-resolution photos, 4K video, and premium aerial performance.`,
+  `Buy the DJI Mini 3 in Nepal.
+   Lightweight 4K drone perfect for beginners and creators.
+   Enjoy great flight time, smooth footage, and the best deals in Kathmandu.`,
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

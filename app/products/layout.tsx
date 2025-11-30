@@ -4,8 +4,8 @@ import Header from "../../components/header";
 
 
 export const metadata = {
-title: "Products | Drone CMS",
-description: "Products listing page with search & pagination",
+title: "Products | Buy Drones & Accessories in Nepal",
+description: "Shop high-quality drones, FPV gear, and accessories in Nepal. Find branded first-hand drones, top second-hand options, and essential parts at the best prices.",
 };
 
 

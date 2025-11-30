@@ -3,9 +3,9 @@ import "../../../globals.css";
 
 
 export const metadata = {
-  title: "Buy DJI Mini 4 Pro | Best Price in Nepal",
+  title: "DJI Mini 4 Pro Nepal | Best Price & Fast Delivery",
   description:
-    "Get a DJI Mini 4 Pro that has been carefully checked for quality, offering reliable flight time, crisp 4K video, and a budget-friendly price point.",
+    "Shop the DJI Mini 4 Pro in Nepal. Ultra-light 4K drone with advanced features, long flight time, and pro-level stability. Best price and fast delivery in Kathmandu.",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
