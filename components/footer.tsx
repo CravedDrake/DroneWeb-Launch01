@@ -6,7 +6,7 @@ export default function Footer() {
   if (pathname !== '/') return null; // show only on homepage
 
   return (
-    <footer className="w-full border-t border-gray-200 mt-8 bg-white">
+    <footer className="w-full border-t border-gray-200 bg-white">
     <div className="max-w-6xl mx-auto px-4 py-5 grid grid-cols-1 md:grid-cols-4 gap-8">
 
       {/* Logo + Info */}
