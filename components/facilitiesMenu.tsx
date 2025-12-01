@@ -53,7 +53,7 @@ export default function FacilitiesMenu() {
               <Link href={'/learn-to-fly'} className="text-base md:text-lg font-semibold mb-2 hover:underline">Learn To Fly</Link>
               </div>
               <div>
-              <Link href={'/drone-mapping'} className="text-base md:text-lg font-semibold mb-2 hover:underline">Learn Drone Mapping</Link>
+              <Link href={'/drone-mapping'} className="text-base md:text-lg font-semibold mb-2 hover:underline">Drone Mapping</Link>
               </div>
             </div>
           </div>
