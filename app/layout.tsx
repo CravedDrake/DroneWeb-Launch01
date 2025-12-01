@@ -9,7 +9,6 @@ export const metadata = {
     icon: [
       { url: "/favicon-light.png", type: "image/png", media: "(prefers-color-scheme: light)" },
       { url: "/favicon-dark.png", type: "image/png", media: "(prefers-color-scheme: dark)" },
-      { url: "/favicon.ico", type: "image/x-icon" }
     ],
   },
 };
