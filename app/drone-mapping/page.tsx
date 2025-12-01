@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";  // Ensure this matc
 
 export default function DroneMappingPage() {
     const phoneNumber = '9779705275917';
-    const learnMessage = encodeURIComponent('Hello, I want to learn Drone Mapping')
+    const learnMessage = encodeURIComponent('Hello, I want to do DroneMapping')
   return (
     <main className="w-full bg-white text-gray-800">
 
@@ -103,7 +103,7 @@ export default function DroneMappingPage() {
         className="inline-flex items-center px-8 py-4 bg-teal-600 hover:bg-teal-800 text-white text-lg font-semibold rounded-xl transition"
         
       >
-        Learn to Fly Now
+        Get DroneMapping Service
         <ArrowRightIcon className="ml-3 w-6 h-6" />
       </button>
         </div>
