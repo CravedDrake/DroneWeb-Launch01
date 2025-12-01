@@ -21,6 +21,7 @@ export default function Header() {
           {[
             { href: '/', label: 'Home' },
             { href: '/products', label: 'Products' },
+            { href: '/drone-mapping', label: 'DroneMapping' },
             { href: '/about-us', label: 'About' },
           ].map((item) => (
             <Link
